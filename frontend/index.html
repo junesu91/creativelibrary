@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>CreativeLibrary</title>
+	<link rel="stylesheet" href="css/main.css" type="text/css" />
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
+
+	<script type="text/javascript" src="js/libs/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/libs/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/libs/slick.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.history.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/ajax_cr.js"></script>
+	<!--  GA TAG-->
+	<!-- Global Site Tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106846743-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments)};
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-106846743-1');
+	</script>
+
+	<!-- Emforce ROI Conversion Tag Start-->
+	<!-- 740(!!엠포스_솔루션) : 1659(ROI) -->
+	<script>
+	window.emfAsyncInit = function() {
+	Emf.convCall(740, 3576, 0, 0, 0);
+	};
+	//load asynchronously
+	(function(d,s,id){
+	var js, ejs = d.getElementsByTagName(s)[0];
+	if(d.getElementById(id)) {return;}
+	js = d.createElement(s); js.id = id;
+	js.src = "//roi.emforce.co.kr/conversion/conversion_dt.js";
+	ejs.parentNode.insertBefore(js,ejs);
+	}(document,'script','emforce-jssdk'));
+	</script>
+	<!-- Emforce ROI Conversion Tag End-->
+
+	<!-- Facebook Pixel Code -->
+	<script>
+	  !function(f,b,e,v,n,t,s)
+	  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	  n.queue=[];t=b.createElement(e);t.async=!0;
+	  t.src=v;s=b.getElementsByTagName(e)[0];
+	  s.parentNode.insertBefore(t,s)}(window, document,'script',
+	  'https://connect.facebook.net/en_US/fbevents.js');
+	  fbq('init', '515448565280358');
+	  fbq('track', 'PageView');
+	</script>
+	<!-- End Facebook Pixel Code -->
+
+	<!-- <noscript><img height="1" width="1" style="display:none"
+	  src="https://www.facebook.com/tr?id=515448565280358&ev=PageView&noscript=1"
+	/></noscript>
+	 -->
+
+
+</head>
+<body>
+	<div id="main_wrap">
+		<header id="header">
+			<section class="header_wrap">
+				<div class="header_contents_wrap">
+					<h2><img src="images/common/search_logo.jpg" alt="creativelibrary지금보고싶은 facebook광고소재를 찾아보세요" /></h2>
+					<!-- 검색 -->
+					<div class="main_search_wrap">
+						<input type="text" class="main_search" name="search_text" placeholder="광고주 명 또는 문구, 해시태그로 검색해보세요"/>
+						<button class="search_button" name="search_button" type="submit"><img src="images/icon/search_btn.jpg" alt="" /></button>
+					</div>
+					<!-- // 검색-->
+					<!-- 셀렉트 박스 -->
+					<div class="select_wrap clearfix">
+						<div class="select_inner_wrap clearfix">
+							<ul>
+								<li class="select_btn">
+									<div class="select" name="device_type"><p>노출위치 전체</p></div>
+									<ul class="select_view" name="device_type">
+										<li>노출위치 전체</li>
+										<li>PC</li>
+										<li>Mobile</li>
+									</ul>
+								</li>
+								<li class="select_btn">
+									<div class="select" name="page_category_filter"><p>업종 전체</p></div>
+									<ul class="select_view" name="page_category_filter">
+										<li>업종 전체</li>
+										<li>IT/Tech</li>
+										<li>공공</li>
+										<li>교육</li>
+										<li>금융</li>
+										<li>도/소매</li>
+										<li>서비스</li>
+										<li>쇼핑</li>
+										<li>스포츠/레저</li>
+										<li>엔터테인먼트</li>
+										<li>여행/숙박</li>
+										<li>예술/문화</li>
+										<li>음식</li>
+										<li>의료/건강</li>
+										<li>인물</li>
+										<li>자동차</li>
+										<li>장소/건물</li>
+										<li>제조</li>
+										<li>종교</li>
+										<li>패션/뷰티</li>
+										<li>회사</li>
+										<li>기타</li>
+									</ul>
+								</li>
+								<li class="select_btn">
+									<div class="select" name="template_type"><p>형식 전체</p></div>
+									<ul class="select_view" name="template_type">
+										<li>형식 전체</li>
+										<li>단일 이미지</li>
+										<li>단일 동영상</li>
+										<li>슬라이드</li>
+										<li>여러 이미지</li>
+									</ul>
+								</li>
+								<li class="select_btn">
+									<div class="select" name="call_to_action_type"><p>행동유도 전체</p></div>
+									<ul class="select_view" name="call_to_action_type">
+										<li>행동유도 전체</li>
+										<li>버튼 없음</li>
+										<li>메뉴보기</li>
+										<li>지금 신청하기</li>
+										<li>지금 예약하기</li>
+										<li>문의하기</li>
+										<li>지금 기부하기</li>
+										<li>다운로드</li>
+										<li>더 알아보기</li>
+										<li>메시지 보내기</li>
+										<li>예약 요청하기</li>
+										<li>지금 구매하기</li>
+										<li>가입하기</li>
+										<li>동영상 더 보기</li>
+										<li>앱 사용하기</li>
+										<li>지금 설치</li>
+										<li>지금 듣기</li>
+										<li>게임하기</li>
+										<li>견적보기</li>
+										<li>구독하기</li>
+										<li>링크 열기</li>
+										<li>지금 전화</li>
+										<li>찾아가는 길 보기</li>
+										<li>저장</li>
+									</ul>
+								</li>
+								<li class="select_btn">
+									<div class="select" name="color_type"><p>색상 전체</p></div>
+									<ul class="select_view color_view" name="color_type">
+										<li class="all_color">색상전체</li>
+										<li class="brown">갈색</li>
+										<li class="red">빨강</li>
+										<li class="orange">주황</li>
+										<li class="yellow">노랑</li>
+										<li class="yellow_green">연두</li>
+										<li class="green">초록</li>
+										<li class="skyBlue">하늘</li>
+										<li class="wave">파랑</li>
+										<li class="pink">분홍</li>
+										<li class="purple">보라</li>
+										<li class="white">흰색</li>
+										<li class="gray">회색</li>
+										<li class="black">검정</li>
+									</ul>
+								</li>
+								<li class="select_btn">
+									<div class="select" name="order_type"><p>최근 수집 순</p></div>
+									<ul class="select_view" name="order_type">
+										<li>최근 수집 순</li>
+										<li>좋아요 순</li>
+										<li>댓글 순</li>
+										<li>공유 순</li>
+										<li>동영상 재생 순</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- // 셀렉트 박스 -->
+					<div class="loading_icon"><img src="images/icon/loading.png" alt="로딩아이콘"/></div>
+				</div>
+			</section>
+		</header>
+		<div id="container">
+			<div class="search_result_wrap">
+				<div class="result_left" style="display:none;">
+					<div>검색결과<span name="search_count">999,999</span>건&nbsp;/&nbsp;</div>
+					<div><span name="search_page_count">13</span>Page</div>
+				</div>
+				<div class="button_right">
+					<button>광고 등록하기</button>
+					<div class="advertisement_pop">
+						<div class="advertisement_pop_wrap">
+							<h2><img src="images/common/registration_logo.jpg" alt="" /></h2>
+							<div class="main_search_wrap">
+								<div class="main_inner_search_wrap" name="add_search">
+									<input type="text" class="main_search" placeholder="등록 할 광고 링크를 입력하세요"/>
+									<button type="submit"><img src="images/icon/registration_btn.jpg" alt="" /></button>
+								</div>
+								<!--/////////////////////////////////////////////////////// 광고 등록 완료 ///////////////////////////////////////////////////////-->
+								<div class="complete_wrap" name="add_complete" style="display:none;">
+									<div class="text_box">광고가 등록 되었습니다. 5~10분 후 정상적으로 표시 됩니다.</div>
+									<button type="submit"><img src="images/icon/complete_icon.jpg" alt="" /></button>
+								</div>
+								<!--/////////////////////////////////////////////////////// 광고 등록 완료 ///////////////////////////////////////////////////////-->
+								<div class="advertisemen_info" name="add_info">
+									<p class="title">*&nbsp;광고 등록 방법</p>
+									<div class="info_box_wrap">
+										<div>
+											<p class="info_title">Step&nbsp;1</p>
+											<p>페이스북 광고 우측의<br /><span class="info_icon"><img src="images/icon/info_icon01.png" alt="" /></span><span>버튼 클릭</span></p>
+											<div><img src="images/common/registration_01.jpg" alt="" /></div>
+										</div>
+										<div>
+											<p class="info_title">Step&nbsp;2</p>
+											<p>
+												<span>리스트에서&nbsp;</span><span class="info_icon2"><img src="images/icon/info_icon02.png" alt="" /></span><span>퍼가기 클릭</span>
+												<br /><span style="font-size:12px;">(PC기준,모바일은 링크복사 클릭)</span>
+											</p>
+											<div><img src="images/common/registration_02.jpg" alt="" /></div>
+										</div>
+										<div>
+											<p class="info_title">Step&nbsp;3</p>
+											<p>생성 된 코드 복사</p>
+											<div><img src="images/common/registration_03.jpg" alt="" /></div>
+										</div>
+										<div>
+											<p class="info_title">Step&nbsp;4</p>
+											<p>복사한 코드를 <br />상단의 입력창에 등록</p>
+										</div>
+									</div>
+									<div class="loading_icon"><img src="images/icon/loading.png" alt="로딩아이콘"/></div>
+								</div>
+							</div>
+							<div class="clost_btn"><img src="images/icon/white_close_btn.png" alt="닫기버튼" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 로딩중일 경우-->
+			<div class="loading_wrap" style="display:none;">
+				<div>
+					<p>잠시만 기다려주세요</p>
+					<p>Creative Library가 광고를 찾고 있습니다.</p>
+				</div>
+			</div>
+			<!-- 로딩중일 경우-->
+			<!-- 검색결과가 없을경우-->
+			<div class="none_search_wrap" style="display:none;">
+				<h3>원하는 조건에 맞는 검색결과가 없습니다.</h3>
+				<p>- 광고주 명 또는 문구, 해시태그를 정확히 입력했는지 확인해 보세요.</p>
+				<p>- 검색 필터를 변경해 보세요.</p>
+				<p>- Creative Library에 아직 수집되지 않은 광고일 수 있습니다.</p>
+				<p>- ‘광고 등록하기’ 버튼을 통해 직접 등록해 주세요.</p>
+			</div>
+			<!-- // 검색결과가 없을경우-->
+			<div class="search_contents_wrap">
+				<ul name="search_first">
+				</ul>
+				<ul name="search_second">
+				</ul>
+				<!-- 메인 컨텐츠 페이징 -->
+				<div class="paging" style="display:none;">
+					<div>
+					<ul>
+						<!-- <li class="paging_icon"><a href="javascript:"><img src="images/icon/paging_01.png" alt="" /></a></li>
+						<li class="paging_icon"><a href="javascript:"><img src="images/icon/paging_03.png" alt="" /></a></li>
+						<li class="now"><a href="javascript:">1</a></li>
+						<li><a href="javascript:">2</a></li>
+						<li><a href="javascript:">3</a></li>
+						<li><a href="javascript:">4</a></li>
+						<li><a href="javascript:">5</a></li>
+						<li><a href="javascript:">6</a></li>
+						<li><a href="javascript:">7</a></li>
+						<li><a href="javascript:">8</a></li>
+						<li><a href="javascript:">9</a></li>
+						<li class="paging_icon"><a href="javascript:"><img src="images/icon/paging_04.png" alt="" /></a></li>
+						<li class="paging_icon"><a href="javascript:"><img src="images/icon/paging_02.png" alt="" /></a></li> -->
+					</ul>
+				</div>
+				<!-- 메인 컨텐츠 페이징 -->
+			</div>
+		</div>
+		<footer id="footer">
+			<p>&copy; <span>eMFORCE</span> Corp.</p>
+		</footer>
+	</div>
+	<img height="1" width="1" style="display:none"
+	  src="https://www.facebook.com/tr?id=515448565280358&ev=3576&cd[adv_id]=740&noscript=1"
+	/>
+</body>
+</html>
